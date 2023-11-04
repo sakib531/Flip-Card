@@ -39,3 +39,13 @@ body {
     background: white;
     margin-top: 40px;
 }
+
+.name {
+    font-size: 30px;
+    padding-top: 75px;
+}
+
+.tag {
+    padding: 5px 0;
+}
+
