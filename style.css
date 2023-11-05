@@ -22,6 +22,7 @@ body {
     border-radius: 5px;
     backface-visibility: hidden;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .2) ;
+    transition: transform .4 linear;
 }
 
 .cover {
@@ -70,4 +71,20 @@ i {
     font-size: 30px;
     padding-left: 20px;
     cursor: pointer;
+}
+
+.back-face {
+    transform: perspective(800px) rotate(-180deg);
+}
+
+.front-face {
+    transform: perspective(800px) rotate(0deg);
+}
+
+.container:hover > .back-face {
+    transform: perspective(800px) rotate(0deg);
+}
+
+.container:hover > .front-face {
+    transform: perspective(800px) rotate(180deg);
 }
